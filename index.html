@@ -23,7 +23,7 @@
     --paper: #FFFFFF;
     --shadow: 0 8px 24px rgba(74,46,34,0.10);
   }
- 
+
   *{ box-sizing: border-box; }
   html{ scroll-behavior: smooth; }
   body{
@@ -41,23 +41,23 @@
   }
   a{ color: inherit; text-decoration: none; }
   img{ max-width: 100%; display:block; }
- 
+
   :focus-visible{
     outline: 3px solid var(--ube-deep);
     outline-offset: 3px;
     border-radius: 4px;
   }
- 
+
   @media (prefers-reduced-motion: reduce){
     *{ animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
- 
+
   .wrap{
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 24px;
   }
- 
+
   /* ---------- NAV ---------- */
   header{
     position: sticky;
@@ -113,7 +113,7 @@
   @media (max-width: 720px){
     .navlinks a:not(.nav-cta){ display:none; }
   }
- 
+
   /* ---------- HERO ---------- */
   .hero{
     padding: 88px 24px 64px;
@@ -205,7 +205,7 @@
     color: var(--cocoa);
   }
   .btn-ghost:hover{ background: var(--cocoa); color: var(--cream); }
- 
+
   /* Cookie chip cluster - signature element */
   .chip-cluster{
     position: relative;
@@ -241,7 +241,7 @@
     .chip-4{ width:82px; height:82px; }
     .chip-5{ width:62px; height:62px; }
   }
- 
+
   /* ---------- MENU ---------- */
   .menu{
     background: var(--paper);
@@ -264,7 +264,7 @@
     color: var(--cocoa-soft);
     font-size: 1.05rem;
   }
- 
+
   .menu-grid{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -272,7 +272,7 @@
   }
   @media (max-width: 900px){ .menu-grid{ grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 600px){ .menu-grid{ grid-template-columns: 1fr; } }
- 
+
   .cookie-card{
     background: var(--cream);
     border-radius: 20px;
@@ -343,7 +343,7 @@
   .sw-tiramisu{ background: var(--tiramisu); }
   .sw-neo{ background: linear-gradient(120deg, var(--neapolitan-pink) 0%, var(--neapolitan-pink) 33%, var(--cream-deep) 33%, var(--cream-deep) 66%, var(--choc) 66%); }
   .sw-neo-matcha{ background: linear-gradient(120deg, var(--neapolitan-pink) 0%, var(--neapolitan-pink) 33%, var(--cream-deep) 33%, var(--cream-deep) 66%, var(--matcha) 66%); }
- 
+
   /* ---------- ABOUT / STORY ---------- */
   .story{
     padding: 96px 24px;
@@ -401,7 +401,7 @@
     line-height: 1.7;
     margin: 0 0 16px;
   }
- 
+
   /* ---------- ORDER / CONTACT ---------- */
   .order{
     background: var(--cocoa);
@@ -446,7 +446,7 @@
   .info-row div b a{ text-decoration: none; }
   .info-row div b a:hover{ text-decoration: underline; }
   .info-row div span{ font-size: 0.9rem; color: rgba(255,248,238,0.7); }
- 
+
   .order-form{
     background: var(--cream);
     border-radius: 22px;
@@ -508,7 +508,7 @@
     margin-top: 12px;
     text-align: center;
   }
- 
+
   .cookie-divider{
     display:flex;
     align-items:center;
@@ -541,7 +541,7 @@
 </style>
 </head>
 <body>
- 
+
 <header>
   <nav>
     <a href="#" class="brand"><span class="brand-mark"></span>Zelaya Sweets</a>
@@ -552,7 +552,7 @@
     </div>
   </nav>
 </header>
- 
+
 <section class="hero">
   <div class="cookie-deco deco-1"><span></span></div>
   <div class="cookie-deco deco-2"><span></span></div>
@@ -576,7 +576,7 @@
     </div>
   </div>
 </section>
- 
+
 <section class="menu" id="menu">
   <div class="wrap">
     <div class="section-head">
@@ -590,10 +590,12 @@
         <h3>Chocolate Chip</h3>
         <p>The classic, done right — crisp edges, a soft chewy center, and pools of melted chocolate in every bite.</p>
         <div class="price-row">
-          <span class="price-pill">2 for $3</span>
-          <span class="price-pill">4 for $6</span>
-          <span class="price-pill">6 for $9</span>
-          <span class="price-pill">12 for $18</span>
+          <span class="price-pill">2 for $4</span>
+          <span class="price-pill">4 for $8</span>
+          <span class="price-pill">6 for $12</span>
+          <span class="price-pill">8 for $16</span>
+          <span class="price-pill">10 for $20</span>
+          <span class="price-pill">12 for $24</span>
         </div>
       </div>
       <div class="cookie-card">
@@ -601,10 +603,12 @@
         <h3>Matcha</h3>
         <p>Earthy ceremonial-grade matcha folded into a buttery dough, lightly sweet with a clean green-tea finish.</p>
         <div class="price-row">
-          <span class="price-pill">2 for $3</span>
-          <span class="price-pill">4 for $6</span>
-          <span class="price-pill">6 for $9</span>
-          <span class="price-pill">12 for $18</span>
+          <span class="price-pill">2 for $4</span>
+          <span class="price-pill">4 for $8</span>
+          <span class="price-pill">6 for $12</span>
+          <span class="price-pill">8 for $16</span>
+          <span class="price-pill">10 for $20</span>
+          <span class="price-pill">12 for $24</span>
         </div>
       </div>
       <div class="cookie-card">
@@ -612,30 +616,35 @@
         <h3>Ube</h3>
         <p>Vibrant purple yam swirled through soft dough for a subtly sweet, vanilla-and-coconut flavor in every bite.</p>
         <div class="price-row">
-          <span class="price-pill">2 for $3</span>
-          <span class="price-pill">4 for $6</span>
-          <span class="price-pill">6 for $9</span>
-          <span class="price-pill">12 for $18</span>
+          <span class="price-pill">2 for $4</span>
+          <span class="price-pill">4 for $8</span>
+          <span class="price-pill">6 for $12</span>
+          <span class="price-pill">8 for $16</span>
+          <span class="price-pill">10 for $20</span>
+          <span class="price-pill">12 for $24</span>
         </div>
       </div>
       <div class="cookie-card">
         <div class="swatch sw-tiramisu"></div>
         <h3>Tiramisu <span class="special-badge">Special order</span></h3>
-        <p>Espresso-soaked dough layered with mascarpone-style filling and a dusting of cocoa — dessert, in cookie form. Sold in 6 or 12, by special order only.</p>
+        <p>Espresso-soaked dough layered with mascarpone-style filling and a dusting of cocoa — dessert, in cookie form. Special order only.</p>
         <div class="price-row">
-          <span class="price-pill">6 for $10</span>
-          <span class="price-pill">12 for $20</span>
+          <span class="price-pill">3 for $10 <small style="font-weight:400; opacity:0.75;">· 2 days</small></span>
+          <span class="price-pill">6 for $20 <small style="font-weight:400; opacity:0.75;">· 2 days</small></span>
         </div>
+        <p class="price-note">More than 6? Contact us — allow 3+ days depending on quantity.</p>
       </div>
       <div class="cookie-card">
         <div class="swatch sw-neo-matcha"></div>
         <h3>Neapolitan (Matcha)</h3>
         <p>Strawberry, vanilla, and matcha dough swirled together for one cookie with three flavors in every piece.</p>
         <div class="price-row">
-          <span class="price-pill">2 for $3</span>
-          <span class="price-pill">4 for $6</span>
-          <span class="price-pill">6 for $9</span>
-          <span class="price-pill">12 for $18</span>
+          <span class="price-pill">2 for $4</span>
+          <span class="price-pill">4 for $8</span>
+          <span class="price-pill">6 for $12</span>
+          <span class="price-pill">8 for $16</span>
+          <span class="price-pill">10 for $20</span>
+          <span class="price-pill">12 for $24</span>
         </div>
       </div>
       <div class="cookie-card">
@@ -643,18 +652,20 @@
         <h3>Neapolitan (Classic)</h3>
         <p>Strawberry, vanilla, and chocolate dough swirled together — the original combo, in cookie form.</p>
         <div class="price-row">
-          <span class="price-pill">2 for $3</span>
-          <span class="price-pill">4 for $6</span>
-          <span class="price-pill">6 for $9</span>
-          <span class="price-pill">12 for $18</span>
+          <span class="price-pill">2 for $4</span>
+          <span class="price-pill">4 for $8</span>
+          <span class="price-pill">6 for $12</span>
+          <span class="price-pill">8 for $16</span>
+          <span class="price-pill">10 for $20</span>
+          <span class="price-pill">12 for $24</span>
         </div>
       </div>
     </div>
   </div>
 </section>
- 
+
 <div class="cookie-divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
- 
+
 <section class="story" id="story">
   <div class="story-grid">
     <div class="story-art">
@@ -668,16 +679,16 @@
     </div>
   </div>
 </section>
- 
+
 <div class="cookie-divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
- 
+
 <section class="order" id="order">
   <div class="order-grid">
     <div>
       <span class="eyebrow" style="color: var(--matcha);">Get In Touch</span>
       <h2>Order your box</h2>
       <p class="lead">Tell us what you're craving and we'll get back to you to confirm flavors, quantity, and pickup or delivery.</p>
- 
+
       <div class="info-row">
         <div class="info-icon">📍</div>
         <div><b>East Los Angeles, CA</b><span>Free delivery within 5 miles · $1/mile beyond that</span></div>
@@ -696,14 +707,14 @@
       </div>
       <div class="info-row">
         <div class="info-icon">⏰</div>
-        <div><b>Dozen or more?</b><span>Please order at least 1 day ahead</span></div>
+        <div><b>Turnaround time</b><span>Orders of 12+: 1 day ahead · Tiramisu 3 or 6: 2 days · Tiramisu 6+: 3+ days</span></div>
       </div>
       <div class="info-row">
         <div class="info-icon">💳</div>
         <div><b>We accept Cash, Zelle & Cash App</b><span>Zelle: ajz12285113@gmail.com · Cash App: $zelayaj47</span></div>
       </div>
     </div>
- 
+
     <div class="order-form">
       <h3>Send an order request</h3>
       <p class="sub">Fill this out and we'll follow up to confirm details.</p>
@@ -739,11 +750,11 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   <span class="brand-mark-small"></span>© 2026 Zelaya Sweets. Handmade in East Los Angeles. · <a href="https://instagram.com/zelaya_sweets" target="_blank" rel="noopener" style="text-decoration:underline;">@zelaya_sweets</a>
 </footer>
- 
+
 <script>
   function toggleAddress(value){
     var field = document.getElementById('address-field');
@@ -751,15 +762,15 @@
   }
   function handleSubmit(e){
     e.preventDefault();
- 
+
     var name = document.getElementById('name').value;
     var contact = document.getElementById('email').value;
     var flavors = document.getElementById('flavors').value;
     var fulfillment = document.getElementById('fulfillment').value;
     var address = document.getElementById('address').value;
- 
+
     var subject = "Cookie Order Request - " + name;
- 
+
     var body = "Name: " + name + "\n";
     body += "Contact (email/phone): " + contact + "\n";
     body += "Flavors & quantity: " + flavors + "\n";
@@ -767,15 +778,14 @@
     if (fulfillment === "Delivery" && address){
       body += "Delivery address: " + address + "\n";
     }
- 
+
     var mailtoLink = "mailto:zelaya.sweets@gmail.com"
       + "?subject=" + encodeURIComponent(subject)
       + "&body=" + encodeURIComponent(body);
- 
+
     window.location.href = mailtoLink;
   }
 </script>
- 
+
 </body>
 </html>
- 
